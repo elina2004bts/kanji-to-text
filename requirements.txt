@@ -1,8 +1,4 @@
-streamlit
-transformers
-torchvision
-fugashi[unidic-lite]
-streamlit
-transformers
-Pillow
-torch  # Для поддержки моделей Hugging Face
+paddlepaddle==2.6.1  # Убедитесь, что используете версию paddle, подходящую для вашей системы
+paddleocr==2.3.0  # Убедитесь, что используете последнюю версию PaddleOCR
+Pillow==8.4.0  # Для работы с изображениями
+streamlit==1.5.0  # Для создания веб-приложения на Streamlit
