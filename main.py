@@ -1,6 +1,5 @@
 import io
 import streamlit as st
-
 from transformers import pipeline
 from PIL import Image
 
@@ -15,12 +14,13 @@ def load_image():
         return None
 
 
-st.title('Распознай японский текст с изображения!')
+st.title('Распознай китайский текст с изображения!')
 img = load_image()
 
 result = st.button('Распознать изображение')
 if result:
-    captioner = pipeline("image-to-text","kha-white/manga-ocr-base")
+    # Замените модель на китайскую модель OCR
+    captioner = pipeline("image-to-text", model="microsoft/layoutlmv3-base-chinese")
     text = captioner(img)
     st.write('**Результаты распознавания:**')
     st.write(text[0]["generated_text"])
