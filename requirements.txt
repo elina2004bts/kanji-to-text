@@ -2,3 +2,6 @@ streamlit
 transformers
 torchvision
 fugashi[unidic-lite]
+paddleocr
+paddlepaddle
+opencv-python
