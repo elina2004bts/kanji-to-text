@@ -2,6 +2,7 @@ streamlit
 transformers
 torchvision
 fugashi[unidic-lite]
-paddleocr
-paddlepaddle
-opencv-python
+streamlit
+transformers
+Pillow
+torch  # Для поддержки моделей Hugging Face
